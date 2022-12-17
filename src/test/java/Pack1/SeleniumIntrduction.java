@@ -11,10 +11,7 @@ public class SeleniumIntrduction {
 			System.setProperty("webdriver.chrome.driver", "C:\\Users\\hp\\Downloads\\chromedriver1\\chromedriver.exe");
 			
 			WebDriver  driver = new ChromeDriver();
-			//-----> get <----
 			//driver.get("https://www.instagram.com/");
-			
-			//----> navigate <----
 			driver.navigate().to("https://www.instagram.com/");
 		}
 }
