@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class SeleniumIntrduction {
 
 	public static void main(String[] args) {
-		//invoking Browser
+		//winvoking Browser
 		//ChromeDriver - Method (get , close)
 
 		//ChromeDriver driver = new ChromeDriver();
