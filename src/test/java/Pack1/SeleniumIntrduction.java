@@ -14,7 +14,7 @@ public class SeleniumIntrduction {
 //		for linkedin web
 		cd.get("https://in.linkedin.com/?src=go-pa&trk=sem-ga_campid.14650114791_asid.127961666580_crid.545833659352_kw.linkedin_d.c_tid.kwd-285981853_n.g_mt.p_geo.9301385&mcid=6844056167778418688&cid=&gclid=EAIaIQobChMI6Z2Q2O_9-wIVwdCWCh2RjA59EAAYASAAEgK5UfD_BwE&gclsrc=aw.ds");
 		cd.findElement(By.name("session_key")).sendKeys("7879577398");
-		cd.findElement(By.name("session_password")).sendKeys("Niveshsharma@123");
+		cd.findElement(By.name("session_password")).sendKeys("xyz");
 		cd.findElement(By.className("sign-in-form__submit-button")).click();
 	
 //for searching anything on google
@@ -25,7 +25,7 @@ public class SeleniumIntrduction {
 //		e.submit();
 		
 		
-//		for dealing with insta :
+//		for dealing with insta : not working on insta
 //		cd.navigate().to("https://www.instagram.com/");
 //		cd.manage().window().maximize();
 //		WebElement e2 = cd.findElement(By.className("_aa4b _add6 _ac4d"));
@@ -38,7 +38,7 @@ public class SeleniumIntrduction {
 //	    e3.click();
 //	    cd.findElement(By.id("ap_email")).sendKeys("7879577398");
 //	    cd.findElement(By.id("continue")).click();
-//	    cd.findElement(By.name("password")).sendKeys("bharatmata");
+//	    cd.findElement(By.name("password")).sendKeys("entervalidpass");
 //	    cd.findElement(By.id("signInSubmit")).click();
 //	    cd.findElement(By.id("twotabsearchtextbox")).sendKeys("beuty products");
 //	    cd.findElement(By.id("nav-search-submit-button")).click();
