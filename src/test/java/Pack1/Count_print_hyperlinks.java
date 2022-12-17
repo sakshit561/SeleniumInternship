@@ -1,16 +1,21 @@
 package Pack1;
 
+import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Selenium_webdriver_commonds {
+public class Count_print_hyperlinks {
 	public static void main(String[] args) {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\nives\\eclipse-workspace\\chromedriver_win32\\chromedriver.exe");
 		WebDriver cd = new ChromeDriver();
-		cd.navigate().to("https://www.nopcommerce.com/en/demo");
-		cd.manage().window().maximize();
-		cd.findElement(By.xpath("//*[@id=\"ph-topic\"]/div[2]/div/div[1]/div[2]/div/div/a[1]/span")).click();
-		
+		cd.get("https://www.calculator.net/");
+		List<WebElement> li = cd.findElements(By.tagName("a"));
+		li.size();
+		for(WebElement el : li) {
+			System.out.println(el.getText());
+		}
+		cd.close();
 	}
 }
