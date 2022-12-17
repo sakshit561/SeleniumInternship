@@ -19,15 +19,6 @@ public class SeleniumWebdriverCommands {
    driver.findElement(By.xpath("//*[id=\"Email\"]")).sendKeys("admin@yourstore.com");
    driver.findElement(By.xpath("//*[id=\"Password\"]")).sendKeys("admin");
    driver.findElement(By.xpath("//button[@type=\"submit\"]")).click();
-   
-   
-   
-   
-   
-   
-   
-   
-   
-
+  
 }
 }
