@@ -9,7 +9,9 @@ public class SeleniumIntrduction {
 		// invoking browse
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\asus\\Downloads\\chromedriver1\\chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
+		//get(url),navigate().to(url) to reach at the web page
 		driver.get("https://www.w3schools.com/");
+		//driver.navigate (). to("https://www.w3schools.com/");
 
 	}
 
