@@ -8,7 +8,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Testinglogin {
 
-	public static void main(String[] args) {
+	public static void main(String[] arags) {
 		// TODO Auto-generated method stub
 		WebDriverManager.chromedriver().setup();
 		   WebDriver driver =new ChromeDriver();

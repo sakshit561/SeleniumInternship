@@ -22,3 +22,19 @@ public class SeleniumWebDriverCommands {
 		driver.findElement(By.xpath("/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button")).click();
 	}
 }
+<<<<<<< HEAD
+=======
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+
+
+>>>>>>> 851cd35c3952ad72c928663b9e4caf529ac9c7d3
