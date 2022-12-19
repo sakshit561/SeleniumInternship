@@ -14,8 +14,6 @@ public class SeleniumWebManagerCommands {
 		
 		 WebDriver driver =  new ChromeDriver();
 		 
-		 
-			
 		 //System.setProperty("WebDriver.Chrome.driver", "C:\\Users\\asus\\Downloads\\chromedriver_win32 (1)");
 			
 		 driver.get("https://slack.com/intl/en-in");
