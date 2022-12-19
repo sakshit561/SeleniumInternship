@@ -15,16 +15,21 @@ public class SeleniumWebdriverCommands {
 		//System.setProperty("webdriver.chrome.driver","C:\\Users\\verma\\Downloads\\chromedriver1\\chromedriver.exe");
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://www.nopcommerce.com/en/demo");
+		driver.get("https://www.linkedin.com/home");
 		driver.manage().window().maximize();
-		driver.findElement(By.xpath("//*[@id=\"ph-topic\"]/div[2]/div/div[1]/div[2]/div/div/a[1]/span")).click();
+		driver.findElement(By.xpath("/html/body")).click();
 	    System.out.println(driver.getTitle());
 	    
-	    driver.findElement(By.xpath("//*[@id=\"Email\"]")).sendKeys("admin@yourstore.com");
-	    driver.findElement(By.xpath("//*[@id=\"Password\"]")).sendKeys("admin");
-	   // driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+	    driver.findElement(By.xpath("//*[@id=\"session_key\"]")).sendKeys("vermasagar640@gmail.com");
+	    driver.findElement(By.id("session_password")).sendKeys("onlycrime");
+	    driver.findElement(By.className("sign-in-form__submit-button")).click();
+	   // driver.manage().timeouts().implicitlyWait(1,TimeUnit.MINUTES);
+	    //driver.close();
 	    
-	    driver.findElement(By.cssSelector("body > div.master-wrapper-page > div > div > div > div > div.page-body > div.customer-blocks > div > form > div.buttons > button")).click();
+	    
+	   
+	    
+	    
 	    
 		
 		
