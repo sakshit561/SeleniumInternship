@@ -11,6 +11,6 @@ public class Selenium_webdriver_commonds {
 		cd.navigate().to("https://www.nopcommerce.com/en/demo");
 		cd.manage().window().maximize();
 		cd.findElement(By.xpath("//*[@id=\"ph-topic\"]/div[2]/div/div[1]/div[2]/div/div/a[1]/span")).click();
-		
+		cd.close();
 	}
 }
