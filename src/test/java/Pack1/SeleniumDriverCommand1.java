@@ -21,12 +21,12 @@ public class SeleniumDriverCommand1 {
 		driver.findElement(By.xpath("//*[@id=\"password\"]")).sendKeys("secret_sauce");
 
 		driver.findElement(By.xpath("//*[@id=\"login-button\"]")).click();
-
-
-		}
-
-		
-		
 	}
+}
+
+
+		
+		
+	
 
 
