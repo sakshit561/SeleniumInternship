@@ -8,7 +8,7 @@ public class SeleniumIntrduction {
 		        //invoking browser
 				//ChromeDriver--> methods --> get,close
 				//ChromeDriver driver=new ChromeDriver();
-				System.setProperty("webdriver.chrome.driver","C:\\Users\\Administrator\\Downloads\\chromedriver.exe");
+				System.setProperty("webdriver.chrome.driver","C:\\Users\\Abc\\Downloads\\chromedriver_win32\\chromedriver.exe");
 					WebDriver driver= new ChromeDriver();
 					driver.get("http://www.adani.com/");
 
