@@ -15,8 +15,8 @@ public class seleniumwebdrivercommands {
 	 driver.manage().window().maximize();
 	 driver.findElement(By.xpath("//*[@id=\"ph-topic\"]/div[2]/div/div[1]/div[2]/div/div/a[1]/span")).click();
 	 //System.out.println(driver.getTitle());
-	 //driver.findElement(By.xpath("//*[@id=\"Email\"]")).sendKeys("admin@yourstore.com");
-	 //driver.findElement(By.xpath("//*[@id=\"Password\"]")).sendKeys("admin");
+	 driver.findElement(By.xpath("//*[@id=\"Email\"]")).sendKeys("admi@yourstore.com");
+	 driver.findElement(By.xpath("//*[@id=\"Password\"]")).sendKeys("admin");
 	 
 	 //driver.findElement("/html/body/div[6]/div/div/div/div/div[2]/div[1]/div/form/div[3]/button").click();
 	 
