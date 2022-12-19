@@ -10,6 +10,7 @@ public class Mouse_actions {
 		System.setProperty("webdriver.chrome.driver",
 				"C:\\Users\\nives\\eclipse-workspace\\chromedriver_win32\\chromedriver.exe");
 		WebDriver cd = new ChromeDriver();
+		cd.manage().window().maximize();
 		cd.get("https://demoqa.com/buttons");
 		
 //		click double click and context click actions :
@@ -18,5 +19,6 @@ public class Mouse_actions {
 		ac.doubleClick(el).perform();
 		WebElement el2 = cd.findElement(By.xpath("//*[@id=\"rightClickBtn\"]"));
 		ac.contextClick(el2).perform();
+	
 	}
 }
