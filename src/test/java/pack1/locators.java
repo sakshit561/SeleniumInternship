@@ -25,6 +25,14 @@ public class locators {
 			driver.findElement(By.xpath("//input[@type='text'][3]")).sendKeys("6565678987");
 			driver.findElement(By.xpath("//button[contains(@class,'reset-pwd-btn')]")).click();
 	        //button[contain(@class,'submit']
+			
+			driver.findElement(By.className("(//button[normalize-space()='Go to Login'])[1]")).click();
+			driver.manage().window().maximize();
+			driver.get("https://www.rahulshettyacademy.com/locatorspractice/");
+			driver.findElement(By.id("inputUsername")).sendKeys("abc@gmail.com");
+			driver.findElement(By.name("inputPassword")).sendKeys("abc");
+			driver.findElement(By.className("signInBtn")).click();
+			
 
 			
 	}
