@@ -13,6 +13,7 @@ public class Locators1 {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		String dynamicpass = getPassword(driver);
+		//getEmail(driver);
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
 		driver.findElement(By.id("inputUsername")).sendKeys("abc@gmail.com");
 		driver.findElement(By.name("inputPassword")).sendKeys("abc");
@@ -30,21 +31,35 @@ public class Locators1 {
 		//driver.findElement(By.xpath("//button[text()='Reset Login']")).click();
 		driver.findElement(By.xpath("//button[contains(@class,'reset-pwd-btn')]")).click();
 		//button[contains(@class,'submit')]
+		String name = "abc@gmail.com,";
 		driver.findElement(By.className("go-to-login-btn")).click();
 		driver.findElement(By.id("inputUsername")).sendKeys("abc@gmail.com");
 		driver.findElement(By.name("inputPassword")).sendKeys(dynamicpass);
+		Thread.sleep(2000);
 		driver.findElement(By.className("signInBtn")).click();
 		Thread.sleep(2000);
 		//driver.close();
 		System.out.println(driver.findElement(By.tagName("p")).getText());
+		
 		//String actualresult = driver.findElement(By.tagName("p")).getText();
 	    //String expectedresult = "You are successfully logged in.";
 	    //Assert.assertEquals(actualresult, expectedresult);
-	    Assert.assertEquals(driver.findElement(By.tagName("p")).getText(),"You are successfully logged in.");
-		driver.findElement(By.xpath("//button[text()='Log Out']")).click();		
+	   // Assert.assertEquals(driver.findElement(By.tagName("p")).getText(),"You are successfully logged in.");
+	    String actualresult = driver.findElement(By.tagName("p")).getText();
+		String expectedresult = driver.findElement(By.tagName("p")).getText();
+		Assert.assertEquals(actualresult,expectedresult);
+		//driver.findElement(By.xpath("//button[text()='Log Out']")).click();		
 		//driver.findElement(By.xpath("//*[text()='Log Out']")).click();		
 		Thread.sleep(2000);
-		//driver.close();	
+		System.out.println(driver.findElement(By.cssSelector("h2")).getText());
+		String actualresult1 = driver.findElement(By.cssSelector("h2")).getText();
+		String expectedresult1 = "Hello "+ name; 
+		Assert.assertEquals(actualresult1,expectedresult1);
+		driver.findElement(By.xpath("//button[text()='Log Out']")).click();	
+
+		Thread.sleep(2000);
+	
+		driver.close();	
 	}
 
 		public static String getPassword(WebDriver driver) throws InterruptedException
