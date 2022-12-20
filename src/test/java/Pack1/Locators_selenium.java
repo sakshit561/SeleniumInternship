@@ -3,6 +3,7 @@ package Pack1;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.Assert;
 
 public class Locators_selenium {
 	public static void main(String[] args) throws InterruptedException{
@@ -25,7 +26,12 @@ public class Locators_selenium {
 		cd.findElement(By.xpath("//*[@id=\"inputUsername\"]")).sendKeys("7879577398");
 		cd.findElement(By.cssSelector("input[type=password]")).sendKeys("rahulshettyacademy");
 		Thread.sleep(2000);
+		cd.findElement(By.id("chkboxTwo")).click();
 		cd.findElement(By.cssSelector("button[type=submit]")).click();
+		Thread.sleep(2000);
+//		String result = cd.findElement(By.tagName("p")).getText();
+//		Assert.assertEquals(result, "You are successfully logged in.");
+		cd.findElement(By.xpath("\\buttton[text()='logout-btn']")).click();
 	
 	
 	
