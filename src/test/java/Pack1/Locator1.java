@@ -22,7 +22,9 @@ public class Locator1 {
 			driver.findElement(By.xpath("//input[@type='text'][2]")).sendKeys("abc123@gmail.com");
 			//driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("abc123@gmail.com");
 			driver.findElement(By.xpath("//input[@type='text'][3]")).sendKeys("0123456789");
-			driver.findElement(By.xpath("(//button[normalize-space()='Reset Login'])[1]")).click();
+			Thread.sleep(500);
+			//driver.findElement(By.xpath("//button[contains(@class,'reset-pwd-btn')]")).click();
+			driver.findElement(By.cssSelector(".reset-pwd-btn")).click();
 	        //button[contain(@class,'submit']
 	}
 }
