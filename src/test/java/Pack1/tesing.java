@@ -18,9 +18,11 @@ public class tesing {
 		driver.findElement(By.xpath("//*[@id=\"email\"]")).click();
 		System.out.println(driver.getTitle());
 		driver.findElement(By.xpath("//*[@id=\"pass\"]")).click();
-		driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys("7415730620");
-		driver.findElement(By.xpath("//*[@id=\"pass\"]")).sendKeys("abhi@123");
+		driver.findElement(By.xpath("//*[@id=\"email\"]")).sendKeys("7476856766");
+		driver.findElement(By.xpath("//*[@id=\"pass\"]")).sendKeys("1234");
 		driver.findElement(By.name("login")).click();
+		
+		
 
 	}
 
