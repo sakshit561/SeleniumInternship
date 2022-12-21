@@ -39,6 +39,15 @@ public class Dropdown {
 	    driver.findElement(By.xpath("(//a[@value='MAA'])[2]")).click();
 	    driver.findElement(By.id("autosuggest")).sendKeys(text);
 	    Thread.sleep(2000);
+	    
+	    
+	 // Create object of the Select class
+	    Select se = new Select(driver.findElement(By.xpath("//*[@id=\"ctl00_mainContent_DropDownListCurrency\"]")));
+	    			
+	    // Select the option by index
+	    se.selectByIndex(1);
+	    
+	
 		
 
 	}
