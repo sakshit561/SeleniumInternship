@@ -27,7 +27,7 @@ public class locators {
 				driver.findElement(By.xpath("//input[@type='text'][3]")).sendKeys("7049240878");
 				driver.findElement(By.xpath("//button[contains(@class,'reset-pwd-btn')]")).click();
 		        //button[contain(@class,'submit']
-				
+				driver.findElement(By.xpath("//button[contains(@class,'reset-pwd-btn')]")).click();
 				
 			}
 
