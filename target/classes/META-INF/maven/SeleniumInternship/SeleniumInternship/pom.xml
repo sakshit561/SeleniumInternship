@@ -26,5 +26,10 @@
 </dependency>
 
 
-  </dependencies>
+   	<dependency>
+   		<groupId>QualitrixseleniumProject</groupId>
+   		<artifactId>QualitrixseleniumProject</artifactId>
+   		<version>0.0.1-SNAPSHOT</version>
+   	</dependency>
+   </dependencies>
 </project>
