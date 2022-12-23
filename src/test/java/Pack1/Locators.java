@@ -21,7 +21,7 @@ public class Locators {
 			driver.findElement(By.xpath("//input[@type='text'][1]")).sendKeys("aarav");
 			//driver.findElement(By.xpath("//input[@type='text'][2]")).sendKeys("abc123@gmail.com");
 			driver.findElement(By.cssSelector("input[placeholder='Email']")).sendKeys("abc123@gmail.com");
-			driver.findElement(By.xpath("//input[@type='text'][3]")).sendKeys("6565678987");
+			driver.findElement(By.xpath("//input[@type='text'][3]")).sendKeys("123456789");
 			driver.findElement(By.xpath("//button[contains(@class,'reset-pwd-btn')]")).click();
 	        //button[contain(@class,'submit']
 
