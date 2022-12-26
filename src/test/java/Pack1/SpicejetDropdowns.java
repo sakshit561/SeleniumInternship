@@ -40,8 +40,7 @@ public class SpicejetDropdowns {
         driver.findElement(By.xpath("//a[text()=28]")).click();
         driver.findElement(By.id("custom_date_picker_id_2")).click();
         driver.findElement(By.xpath("//a[text()=30]")).click();
-       // driver.findElement(By.id("autosuggest")).sendKeys("ind");
-       // driver.findElement(By.id("ui-id-85")).click();
+      
         
 	}
 
