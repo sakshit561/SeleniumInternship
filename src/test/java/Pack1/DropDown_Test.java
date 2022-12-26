@@ -17,7 +17,7 @@ public class DropDown_Test {
 		driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
 		driver.manage().window().maximize();
 	WebElement el =	driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
-	Select Dd=  new Select(el);
+	Select Dd =  new Select(el);
 	//Dd.selectByIndex(2);
 	Dd.selectByVisibleText("USD");
 	driver.findElement(By.id("divpaxinfo")).click();

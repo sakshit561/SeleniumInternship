@@ -21,13 +21,14 @@ public class Wait {
 		
 		driver.get("https://rahulshettyacademy.com/seleniumPractise/");
 		driver.manage().window().maximize();
-		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div[6]/div[2]/a[2]")).click();
-		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div[6]/div[3]/button")).click();
-         driver.findElement(By.cssSelector("img[alt = 'Cart']")).click();
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div[6]/div[2]/a[2]")).click();// for + button of tomato
+		driver.findElement(By.xpath("//*[@id=\"root\"]/div/div[1]/div/div[6]/div[3]/button")).click();// for add to cart
+         driver.findElement(By.cssSelector("img[alt = 'Cart']")).click();// for cart image
          Thread.sleep(2000);
          driver.findElement(By.xpath("//button[text()='PROCEED TO CHECKOUT']")).click();
          Thread.sleep(2000);
          driver.findElement(By.cssSelector("input[placeholder='Enter promo code']")).sendKeys("ABCDE");
+        
          wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='promoBtn']"))).click();
          driver.findElement(By.xpath("//button[text()='Place Order']")).click();
         WebElement el = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div/div/select"));
