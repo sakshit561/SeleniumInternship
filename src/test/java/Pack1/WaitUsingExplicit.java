@@ -1,23 +1,25 @@
 package Pack1;
 
 import java.time.Duration;
-import java.util.Arrays;
 import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WaitUsingExplicit {
 	 
 		public static void main(String[] args) throws InterruptedException  {
 			System.out.println("hello yashodhan");
-			System.setProperty("webdriver.chrome.driver", "C:\\Users\\Administrator\\Downloads\\chromedriver.exe");
+			WebDriverManager.chromedriver().setup();
+			//System.setProperty("webdriver.chrome.driver", "C:\\Users\\Administrator\\Downloads\\chromedriver.exe");
 			WebDriver driver = new ChromeDriver();
 			driver.manage().window().maximize();
 			driver.get("https://rahulshettyacademy.com/seleniumPractise/");
@@ -47,12 +49,19 @@ public class WaitUsingExplicit {
 			//d.findElement(By.xpath("//input[@class='promoCode']")).sendKeys("abcde");
 			driver.findElement(By.cssSelector("button[class='promoBtn']")).click();
 
-//			String actualresult=d.findElement(By.className(".promoInfo")).getText();
-//			System.out.println(actualresult);
-//			String expectedresult="Invalid code ..!";
-//			Assert.assertEquals(actualresult,expectedresult);
-//			 System.out.println(d.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div/div/span")).getText());
+//			
+//		
+//			
+//					 
+			Thread.sleep(5000);
+			System.out.println(driver.findElement(By.xpath("//span[text()='Invalid code ..!']")).getText());
+			String actualresult=driver.findElement(By.cssSelector("span.promoInfo")).getText();
 			Thread.sleep(2000);
+			String expectedresult="Invalid code ..!";
+			Assert.assertEquals(actualresult,expectedresult);
+			
+			Thread.sleep(2000);
+
 			driver.findElement(By.xpath("//button[text()='Place Order']")).click();	
 			Thread.sleep(2000);
 			

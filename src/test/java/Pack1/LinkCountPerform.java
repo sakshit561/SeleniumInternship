@@ -16,6 +16,7 @@ public class LinkCountPerform {
 		System.out.println(driver.findElements(By.tagName("a")).size());
 		WebElement FooterLink=driver.findElement(By.className("gf-BIG"));
 		System.out.println(FooterLink.findElements(By.tagName("a")).size());
+		WebElement firstSection=driver.findElement(null)
 		
 		
 		

@@ -1,6 +1,9 @@
 package Pack1;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
@@ -28,9 +31,19 @@ public class ActionClassPractice {
 		w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#twotabsearchtextbox")));
 		//a.moveToElement(d.findElement(By.cssSelector("#twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("fan").build().perform();
 		a.moveToElement(d.findElement(By.cssSelector("#twotabsearchtextbox"))).click().keyDown(Keys.SHIFT).sendKeys("fan").keyDown(Keys.ENTER).build().perform();
-		a.moveToElement(move).contextClick().perform();
-		Thread.sleep(10000);
-		d.close();
+		//a.moveToElement(move).contextClick().perform();
+		
+		
+		Set<String> s=d.getWindowHandles();
+		List<String> l=new ArrayList<String>();
+		l.addAll(s);
+		
+		d.switchTo().window(l.get(1));
+		d.findElement(By.xpath("//*[@id=\"search\"]/div[1]/div[1]/div/span[1]/div[1]/div[4]/div/div/div/div/div/div/div/div[2]/div/div/div[1]/h2/a/span"));
+		
+		
+		
+		
 		
 		//d.findElement(By.xpath("//*[@id=\"search\"]/div[1]/div[1]/div/span[1]/div[1]/div[3]/div/div/div/div/div/div/div/div[2]/div/div/div[1]/h2/a/span")).click();
 
