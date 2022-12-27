@@ -19,7 +19,7 @@ public class Takes_screenshot {
 		cd.manage().window().maximize();
 		TakesScreenshot sc = ((TakesScreenshot)cd);
 		File fl = sc.getScreenshotAs(OutputType.FILE);
-		File flonj = new File("C:\\Users\\nives\\OneDrive\\Desktop\\program\\myss.png");
+		File flonj = new File("D:\\New folder\\testScreenShot.jpg");
 		FileUtils.copyFile(fl, flonj);
 		
 	}
