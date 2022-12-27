@@ -3,13 +3,20 @@
   <groupId>SeleniumInternship</groupId>
   <artifactId>SeleniumInternship</artifactId>
   <version>0.0.1-SNAPSHOT</version>
+<<<<<<< HEAD
 <dependencies>
   <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+=======
+  <dependencies>
+	  
+	  <!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+>>>>>>> dcc9aad6d6dc9166a7a973c16b79305ee4bf3a52
 <dependency>
     <groupId>org.seleniumhq.selenium</groupId>
     <artifactId>selenium-java</artifactId>
     <version>4.6.0</version>
 </dependency>
+<<<<<<< HEAD
     <!-- https://mvnrepository.com/artifact/org.testng/testng -->
 <dependency>
     <groupId>org.testng</groupId>
@@ -26,4 +33,17 @@
 
 
 </dependencies>
+=======
+<!-- https://mvnrepository.com/artifact/org.testng/testng -->
+<dependency>
+    <groupId>org.testng</groupId>
+    <artifactId>testng</artifactId>
+    <version>7.5</version>
+    <scope>test</scope>
+</dependency>
+
+
+
+ </dependencies>   
+>>>>>>> dcc9aad6d6dc9166a7a973c16b79305ee4bf3a52
 </project>
