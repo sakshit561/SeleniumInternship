@@ -7,6 +7,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+import io.github.bonigarcia.wdm.WebDriverManager;
+
 public class Cart {
 
 	public static void main(String[] args) throws InterruptedException {
@@ -31,7 +33,7 @@ public class Cart {
     d.findElement(By.cssSelector("select[style$='width: 200px;']")).click();
     WebElement el = d.findElement(By.cssSelector("select[style$='width: 200px;']"));
 	
-    
+    WebDriverManager.chromedriver().setup();
    Select s = new Select(el);
 	s.selectByVisibleText("India");
 	Thread.sleep(2000);

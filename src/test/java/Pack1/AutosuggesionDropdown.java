@@ -15,9 +15,9 @@ public class AutosuggesionDropdown {
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\verma\\Downloads\\chromedriver1\\chromedriver.exe");
 		WebDriver d = new ChromeDriver();
 		d.get("https://www.rahulshettyacademy.com/dropdownsPractise/");
-		d.findElement(By.id("autosuggest")).sendKeys("ho");
+		d.findElement(By.id("autosuggest")).sendKeys("ind");
 		Thread.sleep(4000);
-		d.findElement(By.xpath("//a[text()='Honduras']")).click();
+		d.findElement(By.xpath("Ukraine")).click();
 //		List<WebElement> options=d.findElements(By.cssSelector("li[class='ui-menu-item']"));
 //		for (WebElement option:options){ 
 //			 if(option.getText().equalsIgnoreCase("India")) {
