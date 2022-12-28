@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 package Pack1;
 
 import org.openqa.selenium.By;
