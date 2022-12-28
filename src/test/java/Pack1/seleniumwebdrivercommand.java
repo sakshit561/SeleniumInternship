@@ -8,6 +8,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class seleniumwebdrivercommand {
 	public static void main(String[] args) {
+		System.out.println("Hello Manish Arya");
 		WebDriverManager.chromedriver().setup();
 		WebDriver driver = new ChromeDriver();
 		driver.get("https://www.nopcommerce.com/en/demo");
