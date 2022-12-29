@@ -1,10 +1,5 @@
 Manifest-Version: 1.0
-<<<<<<< HEAD
 Built-By: reshu
 Build-Jdk: 19.0.1
-=======
-Built-By: dell
-Build-Jdk: 19
->>>>>>> dcc9aad6d6dc9166a7a973c16b79305ee4bf3a52
 Created-By: Maven Integration for Eclipse
 
