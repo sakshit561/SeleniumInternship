@@ -35,9 +35,9 @@ public class WindowHandlePractice {
 		System.out.println(emailId);
 		driver.switchTo().window(parentId);
 		driver.findElement(By.id("username")).sendKeys(emailId);
-		driver.findElement(By.id("password")).sendKeys("abcd");
-		driver.findElement(By.name("//*[@id=\"login-form\"]/div[4]/div/label[1]/span[2]")).click();
-		driver.findElement(By.className("//*[@id=\"login-form\"]/div[5]/select")).click();
+		driver.findElement(By.id("password")).sendKeys("Learning");
+		//driver.findElement(By.name("//*[@id=\"login-form\"]/div[4]/div/label[1]/span[2]")).click();
+		//driver.findElement(By.className("//*[@id=\"login-form\"]/div[5]/select")).click();
 	}
 
 }
