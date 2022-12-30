@@ -35,7 +35,7 @@ public class GetWindowTitles {
 		while(it.hasNext()) {
 			cd.switchTo().window(it.next());
 			System.out.println(cd.getTitle());
-			Thread.sleep(2000);
+			Thread.sleep(3000);
 		}
 		
 			

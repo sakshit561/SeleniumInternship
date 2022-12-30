@@ -11,8 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class LinkCountPerform {
 	public static void main(String[] args) {
 		System.out.println("Hello Nivesh");
-		System.setProperty("webdriver.chrome.driver",
-				"C:\\Users\\nives\\eclipse-workspace\\chromedriver_win32\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C\\Users\\nives\\eclipse-workspace\\chromedriver_win32\\chromedriver.exe");
 		WebDriver cd = new ChromeDriver();
 		cd.manage().window().maximize();
 //		lauching web page to perform test :
@@ -34,19 +33,19 @@ public class LinkCountPerform {
 		for(WebElement el : s)	el.sendKeys(keys);
 		
 //		opening all links of second left section :
-		WebElement secondLeft = cd.findElement(By.xpath("//table/tbody/tr/td[2]/ul"));
-		List<WebElement> s2 = secondLeft.findElements(By.tagName("a"));
-		for(WebElement el : s2)	el.sendKeys(keys);
+//		WebElement secondLeft = cd.findElement(By.xpath("//table/tbody/tr/td[2]/ul"));
+//		List<WebElement> s2 = secondLeft.findElements(By.tagName("a"));
+//		for(WebElement el : s2)	el.sendKeys(keys);
 		
 //		opening all links of second last section :
-		WebElement secondLast = cd.findElement(By.xpath("//table/tbody/tr/td[3]/ul"));
-		List<WebElement> s3 = secondLast.findElements(By.tagName("a"));
-		for(WebElement el : s3)	el.sendKeys(keys);
+//		WebElement secondLast = cd.findElement(By.xpath("//table/tbody/tr/td[3]/ul"));
+//		List<WebElement> s3 = secondLast.findElements(By.tagName("a"));
+//		for(WebElement el : s3)	el.sendKeys(keys);
 		
 //		opening all links of last section :
-		WebElement last = cd.findElement(By.xpath("//table/tbody/tr/td[4]/ul"));
-		List<WebElement> s4 = last.findElements(By.tagName("a"));
-		for(WebElement el : s4)	el.sendKeys(keys);
+//		WebElement last = cd.findElement(By.xpath("//table/tbody/tr/td[4]/ul"));
+//		List<WebElement> s4 = last.findElements(By.tagName("a"));
+//		for(WebElement el : s4)	el.sendKeys(keys);
 		
 	}
 }
