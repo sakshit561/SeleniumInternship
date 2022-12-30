@@ -19,21 +19,31 @@ public class WindowHandlePractice {
 		WebDriverWait w =  new WebDriverWait(d,Duration.ofSeconds(20));
 		
 		d.get("https://www.rahulshettyacademy.com/loginpagePractise/");
-		d.manage().window().maximize();
+		
 		d.findElement(By.cssSelector(".blinkingText")).click();
 		Set<String> window= d.getWindowHandles();
+		
+		
 		Iterator <String>it = window.iterator();
+		
 		String parentId= it.next();
 		String childID=it.next();
 		d.switchTo().window(childID);
+		
 		w.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".im-para.red")));
+		
 		System.out.println(d.findElement(By.cssSelector(".im-para.red")).getText());
 		String emailId =d.findElement(By.cssSelector(".im-para.red"))
 				.getText().split("at")[1].trim().split(" ")[0];
 		
 		System.out.println(emailId);
 		d.switchTo().window(parentId);
-		d.findElement(By.id("username")).sendKeys(emailId);
+		d.findElement(By.id("username")).sendKeys("rahulshettyacademy");
+		d.findElement(By.id("password")).sendKeys("learning");
+		d.findElement(By.xpath("(//span[@class='checkmark'])[1]")).click();
+		//d.findElement(By.xpath("okayBtn")).click(); 
+		d.findElement(By.id("terms")).click();
+		d.findElement(By.id("signInBtn")).click();
 	}
 
 }

@@ -26,7 +26,7 @@ public class WaitTesting {
 		driver.findElement(By.cssSelector("button[class='promoBtn']")).click();
 		driver.findElement(By.xpath("//button[text()='Place Order']")).click();
 		Thread.sleep(2000);
-		WebElement el = driver.findElement(By.xpath("//*[@id=\"root\"]/div/div/div/div/div/select"));
+		WebElement el = driver.findElement(By.xpath("//div[@class='wrapperTwo']//div//select"));
 		Select dropdown = new Select(el);
 		dropdown.selectByVisibleText("India");
 		driver.findElement(By.xpath("//input[@class='chkAgree']")).click();

@@ -17,7 +17,7 @@ public class CertificationsDownloadPractice {
 		WebDriver d =  new ChromeDriver(option);
 		d.manage().window().maximize();
 		
-		d.get("https://www.karvy.com/");
+		d.get("https://www.w3schools.com/");
 		System.out.println(d.getTitle());
 
 	}

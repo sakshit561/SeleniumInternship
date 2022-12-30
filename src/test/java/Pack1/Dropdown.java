@@ -37,9 +37,11 @@ public class Dropdown {
 		driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
 		driver.findElement(By.xpath("//a[@value='GWL']")).click();
 		Thread.sleep(2000);
-		driver.findElement(By.xpath("(//a[@value='BLR'])[2]")).click();
+		driver.findElement(By.xpath("(//a[@value='BLR'])[2]")).click();	
+		driver.findElement(By.xpath("//a[text()=23]")).click();
+		//driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
 		driver.findElement(By.id("autosuggest")).sendKeys("IND");
-		Thread.sleep(2000);
+		
 	}
 
 }

@@ -36,13 +36,15 @@ public class Locators {
 			driver.findElement(By.className("signInBtn")).click();
 			driver.findElement(By.tagName("h2")).getText();
 			Thread.sleep(3000);
-            System.out.println(driver.findElement(By.tagName("h2")).getText());
+            
 			String name="abc123@gmail.com,";
      		String actualresult=driver.findElement(By.tagName("h2")).getText();
 			String expectedresult="Hello "+name;
 			Assert.assertEquals(actualresult,expectedresult);
+			System.out.println(driver.findElement(By.tagName("h2")).getText());
 			
 			 driver.findElement(By.xpath("//*[text()='Log Out']")).click();
+			 driver.close();
 	       }
 			public static String getPassword(WebDriver driver) throws InterruptedException {
 				

@@ -23,5 +23,5 @@ public class TakesScreenShot {
 		FileUtils.copyFile(scr, new File("C:\\Users\\mdim3\\eclipse-workspace\\screenshot.png"));
 
 	}
-
+ 
 }
